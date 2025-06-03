@@ -28,13 +28,16 @@ class School:
         """Ajout du cours course à la liste des cours."""
         self.courses.append(course)
 
+
     def add_teacher(self, teacher: Teacher) -> None:
         """Ajout de l'enseignant teacher à la liste des enseignants."""
         self.teachers.append(teacher)
 
+
     def add_student(self, student: Student) -> None:
         """Ajout de l'élève spécifié à la liste des élèves."""
         self.students.append(student)
+
 
     def display_courses_list(self) -> None:
         """Affichage de la liste des cours avec pour chacun d'eux :
@@ -45,6 +48,7 @@ class School:
             for student in course.students_taking_it:
                 print(f"- {student}")
             print()
+
 
     @staticmethod
     def get_course_by_id(id_course: int):
